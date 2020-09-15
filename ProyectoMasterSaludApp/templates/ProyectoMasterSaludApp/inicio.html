@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Inicio</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <!-- Stylesheets-->
+    {% load static %}
+    <link rel="icon" href="{% static 'ProyectoMasterSaludApp/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/tabla.css' %}">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container"><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )"><img src="{% static 'ProyectoMasterSaludApp/images/banner/foreground-04-1600x60.png' %}" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>
+        <!-- Page Header-->
+        <header class="section page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap rd-navbar-modern-wrap">
+                <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="70px" data-lg-stick-up="true"
+                    data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand">
+                                    <a class="brand" href="{% url 'Inicio'%}"><img src="{% static 'ProyectoMasterSaludApp/images/logo.jpg' %}" alt="" width="196" height="47" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+
+                                    <!-- RD Navbar Search-->
+                                    <div class="rd-navbar-search">
+                                        <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                        <form class="rd-search" action="#">
+                                            <div class="form-wrap">
+                                                <label class="form-label" for="rd-navbar-search-form-input">Buscar...</label>
+                                                <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="search">
+                                                <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'Inicio'%}">INICIO</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about'%}">Alimentación Saludable</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'saludable'%}">Alimentación Saludable Para Adultos, Lactantes y niños</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'encuesta'%}">Encuesta</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contactos'%}">Contactos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                                    <div class="project-hamburger-2"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
+                                    </div>
+                                    <div class="project-close"><span></span><span></span></div>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-project rd-navbar-modern-project">
+                                <div class="rd-navbar-project-modern-header">
+                                    <h4 class="rd-navbar-project-modern-title">Ponerse en contacto</h4>
+                                    <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                                        <div class="project-close"><span></span><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="rd-navbar-project-content rd-navbar-modern-project-content">
+                                    <div>
+                                        <p>"Sus sugerencias y aportes son muy valiosos para nosotros, póngase en contacto con nosotros."</p>
+
+                                        <ul class="rd-navbar-modern-contacts">
+                                            <li>
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                                                    <div class="unit-body"><a class="link-phone" href="tel:#">(+593) 74135250 ext 1278</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                                                    <div class="unit-body"><a class="link-location" href="#">Cuenca - Ecuador Calle Vieja 12-30 y Elia Liut
+                                                        Edificio Cornelio Merchán, segundo piso.</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#">catedraunescoinclusion@ups.edu.ec </a></div>
+                                                </div>
+
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+
+
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#">catedraunescoinclusion.org</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-inline rd-navbar-modern-list-social">
+                                            <li>
+                                                <a class="icon fa fa-facebook" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-twitter" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-google-plus" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-instagram" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-pinterest" href="#"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Swiper-->
+        <section class="section swiper-container swiper-slider swiper-slider-modern" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="true" data-slide-effect="fade">
+            <div class="swiper-wrapper text-left">
+                <div class="swiper-slide " data-slide-bg="{% static 'ProyectoMasterSaludApp/images/alimentacion.jpg' %}">
+                    <div class="swiper-slide-caption">
+                        <div class="container">
+                            <div class="row justify-content-center justify-content-xxl-start">
+                                <div class="col-md-10 col-xxl-6">
+                                    <div class="slider-modern-box">
+                                        <h1 class="slider-modern-title"><span data-caption-animate="slideInDown" data-caption-delay="0">DIETA SALUDABLE </span></h1>
+                                        <p data-caption-animate="fadeInRight" data-caption-delay="400" style="color: white;">Existe un posible riesgo de enfrentarnos a una emergencia alimentaria mundial que a largo plazo podría afectar a cientos de millones de niños y adultos.</p>
+                                        <div class="oh button-wrap"><a class="button button-primary button-ujarak" href="{% url 'about'%}" data-caption-animate="slideInLeft" data-caption-delay="400">LEER MÁS</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide context-dark" data-slide-bg="{% static 'ProyectoMasterSaludApp/images/slider2.jpg' %}">
+                    <div class="swiper-slide-caption">
+                        <div class="container">
+                            <div class="row justify-content-center justify-content-xxl-start">
+                                <div class="col-md-10 col-xxl-6">
+                                    <div class="slider-modern-box">
+                                        <h2 class="slider-modern-title"><span data-caption-animate="slideInLeft" data-caption-delay="0">¿Por qué es importante una buena alimentación?</span></h2>
+                                        <p data-caption-animate="fadeInRight" data-caption-delay="400" style="color: black;">Una alimentación sana permite por un lado que nuestro organismo funcione con normalidad, que cubra nuestras necesidades fisiológicas básicas, y por otro, reduce el riesgo de padecer enfermedades a corto y largo
+                                            plazo.
+                                        </p>
+                                        <div class="oh button-wrap"><a class="button button-primary button-ujarak" href="{% url 'about'%}" data-caption-animate="slideInLeft" data-caption-delay="400">LEER MÁS</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide context-dark" data-slide-bg="{% static 'ProyectoMasterSaludApp/images/saludable2.jpg' %}">
+                    <div class="swiper-slide-caption">
+                        <div class="container">
+                            <div class="row justify-content-center justify-content-xxl-start">
+                                <div class="col-md-10 col-xxl-6">
+                                    <div class="slider-modern-box">
+                                        <h1 class="slider-modern-title"><span data-caption-animate="slideInDown " data-caption-delay="0">Consejos Saludables</span></h1>
+                                        <p data-caption-animate="fadeInRight" data-caption-delay="400">"Qué rico es comer bien y sano" (Consuma alimentos variados, incluidas frutas y verduras, etc.)</p>
+                                        <div class="oh button-wrap"><a class="button button-primary button-ujarak" href="{% url 'about'%}" data-caption-animate="slideInUp" data-caption-delay="400">LEER MÁS</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper Navigation-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Swiper Pagination-->
+            <div class="swiper-pagination swiper-pagination-style-2"></div>
+        </section>
+        <hr style="color: green; ">
+        <hr style="color: green; ">
+
+
+
+        <!-- Section CTA 2-->
+        <section class="section text-center">
+            <div class="parallax-container " data-parallax-img=" ">
+                <div class=" parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-40 ">
+                    <div class="container ">
+                        <h3 style="text-align: center; border: 1px dotted #000; padding: 8px; width: 50%; border: 1px dotted #f00; padding: 8px; margin: auto; " class="page-header ">ALIMENTACION SALUDABLE</h3>
+                        <br><br>
+
+
+                        <table>
+                            <tr>
+                                <td class="first ">
+                                    <img class=" " src="{% static 'ProyectoMasterSaludApp/images/index.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 400px; ">
+
+                                </td>
+                                <td class="second ">
+                                    <h4 style="text-align: justify; "> La actual situación de salud que atraviesa la población mundial es crítica, debido principalmente a la dificultad en el acceso a los alimentos, pero también a la calidad de estos últimos. Ya que según la Organización
+                                        de las Naciones Unidas para la Alimentación y la Agricultura (FAO), existe un posible riesgo de enfrentarnos a una emergencia alimentaria mundial que a largo plazo podría afectar a cientos de millones de niños y
+                                        adultos. Puesto que unos 83 millones de personas más, y posiblemente hasta 132 millones, podrían pasar hambre en 2020 como consecuencia de la recesión económica desencadenada por la pandemia (2020).</h4> <br></br>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <hr style="color: green; ">
+                        <hr style="color: green; ">
+                        <table>
+                            <tr>
+                                <td class="first ">
+
+                                    <h4 style="text-align: justify; ">Una alimentación saludable es muy importante durante la pandemia de COVID-19. Lo que comemos y bebemos puede afectar a la capacidad de nuestro organismo para prevenir y combatir las infecciones y para recuperarse de
+                                        ellas (OMS, 2018).
+                                    </h4>
+                                </td>
+                                <br>
+                                <br>
+                                <td class="second ">
+                                    <img class=" " src="{% static 'ProyectoMasterSaludApp/images/index2.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 300px; ">
+
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <br><br><br>
+                    <hr>
+
+
+                </div>
+            </div>
+    </div>
+    </section>
+    <hr style="color: green; ">
+    <hr style="color: green; ">
+
+    <!-- Team of professionals-->
+    <section class="section section-md bg-default ">
+        <div class="container ">
+            <div class="oh ">
+                <h2 style="font-size: 60px;font-weight: 600;text-transform: uppercase; text-align: center; ">Una Iniciativa de:</h2>
+            </div>
+            <div class="row row-30 justify-content-center ">
+                <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInRight " data-wow-delay="0s ">
+                    <!-- Team Classic-->
+                    <article class=" ">
+                        <a class=" " href="# "><img src="{% static 'ProyectoMasterSaludApp/images/logoGIIATa.jpg' %} " alt=" " width="370 " height="406 " /></a>
+                        <div class="team-classic-caption ">
+                            <h5 class="team-classic-name "><a href="# ">Grupo de Investigación en Inteligencia Artificial y </a></h5>
+                            <p class="team-classic-status ">Tecnologías de Asistencia</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInRight " data-wow-delay=".1s ">
+                    <!-- Team Classic-->
+                    <article class=" ">
+                        <a class=" " href="# "><img src="{% static 'ProyectoMasterSaludApp/images/logoCatedra.jpg' %} " alt=" " width="570 " height="806 " /></a>
+                        <div class="team-classic-caption ">
+                            <h5 class="team-classic-name "><a href="# ">Cátedra Unesco "Tecnologías de Apoyo a la Inclusión Educativa " </a></h5>
+                            <p class="team-classic-status ">(Ecuador)</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInRight " data-wow-delay=".2s ">
+                    <!-- Team Classic-->
+                    <article class=" ">
+                        <a class=" " href="# "><img src="{% static 'ProyectoMasterSaludApp/images/ups.jpg' %} " alt=" " width="370 " height="406 " /></a>
+                        <div class="team-classic-caption ">
+                            <h5 class="team-classic-name "><a href="# ">Universidad Politécnica Salesiana </a></h5>
+                            <p class="team-classic-status ">(Ecuador)</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr style="color: green; ">
+    <hr style="color: green; ">
+
+    <!-- Improve your interior with deco-->
+    <section class="section section-md bg-default section-top-image ">
+        <div class="container ">
+            <div class="oh h2-title ">
+
+                <h2 class="wow slideInUp " data-wow-delay="0s ">ALIMENTOS SALUDABLES PARA CONSUMIR DURANTE LA CUARENTENA POR COVID-19.</h2>
+            </div>
+            <div class="row row-30 " data-lightgallery="group ">
+                <div class="col-sm-6 col-lg-4 ">
+                    <div class="oh-desktop ">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInLeft " data-wow-delay="0s ">
+                            <div class="thumbnail-mary-figure "><img src="{% static 'ProyectoMasterSaludApp/images/sandia.jpg' %} " alt=" " width="370 " height="303 " />
+                            </div>
+                            <div class="thumbnail-mary-caption ">
+                                <a class="icon fl-bigmug-line-zoom60 " href="{% static 'ProyectoMasterSaludApp/images/sandia.jpg' %} " data-lightgallery="item "><img src="{% static 'ProyectoMasterSaludApp/images/sandia.jpg' %} " alt=" " width="370
+                " height="303 " /></a>
+                                <h4 class="thumbnail-mary-title "><a href="# ">Sandías</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <div class="oh-desktop ">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInUp " data-wow-delay=".1s ">
+                            <div class="thumbnail-mary-figure "><img src="{% static 'ProyectoMasterSaludApp/images/uva.jpg' %} " alt=" " width="370 " height="303 " />
+                            </div>
+                            <div class="thumbnail-mary-caption ">
+                                <a class="icon fl-bigmug-line-zoom60 " href="{% static 'ProyectoMasterSaludApp/images/uva.jpg' %} " data-lightgallery="item "><img src="{% static 'ProyectoMasterSaludApp/images/uva.jpg' %} " alt=" " width="370
+                " height="303 " /></a>
+                                <h4 class="thumbnail-mary-title "><a href="# ">Uvas</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <div class="oh-desktop ">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInRight " data-wow-delay=".0s ">
+                            <div class="thumbnail-mary-figure "><img src="{% static 'ProyectoMasterSaludApp/images/mandarina.jpg' %} " alt=" " width="370 " height="303 " />
+                            </div>
+                            <div class="thumbnail-mary-caption ">
+                                <a class="icon fl-bigmug-line-zoom60 " href="{% static 'ProyectoMasterSaludApp/images/mandarina.jpg' %} " data-lightgallery="item "><img src="{% static 'ProyectoMasterSaludApp/images/mandarina.jpg' %} " alt="
+                " width="370 " height="303 " /></a>
+                                <h4 class="thumbnail-mary-title "><a href="# ">Mandarinas o Naranjas</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <div class="oh-desktop ">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInUp " data-wow-delay=".1s ">
+                            <div class="thumbnail-mary-figure "><img src="{% static 'ProyectoMasterSaludApp/images/limon.jpg' %} " alt=" " width="370 " height="303 " />
+                            </div>
+                            <div class="thumbnail-mary-caption ">
+                                <a class="icon fl-bigmug-line-zoom60 " href=" {% static 'ProyectoMasterSaludApp/images/limonjpg' %} " data-lightgallery="item "><img src="{% static 'ProyectoMasterSaludApp/images/limon.jpg' %} " alt=" " width="370
+                " height="303 " /></a>
+                                <h4 class="thumbnail-mary-title "><a href="# ">Limones</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <div class="oh-desktop ">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInLeft " data-wow-delay="0s ">
+                            <div class="thumbnail-mary-figure "><img src="{% static 'ProyectoMasterSaludApp/images/leche.jpg' %} " alt=" " width="370 " height="303 " />
+                            </div>
+                            <div class="thumbnail-mary-caption ">
+                                <a class="icon fl-bigmug-line-zoom60 " href="{% static 'ProyectoMasterSaludApp/images/leche.jpg' %} " data-lightgallery="item "><img src="{% static 'ProyectoMasterSaludApp/images/leche.jpg' %} " alt=" " width="370
+                " height="303 " /></a>
+                                <h4 class="thumbnail-mary-title "><a href="# ">Bebidas</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 ">
+                    <div class="oh-desktop ">
+                        <!-- Thumbnail Classic-->
+                        <article class="thumbnail thumbnail-mary thumbnail-sm wow slideInDown " data-wow-delay=".1s ">
+                            <div class="thumbnail-mary-figure "><img src="{% static 'ProyectoMasterSaludApp/images/ensalada.jpg' %} " alt=" " width="370 " height="303 " />
+                            </div>
+                            <div class="thumbnail-mary-caption ">
+                                <a class="icon fl-bigmug-line-zoom60 " href="{% static 'ProyectoMasterSaludApp/images/ensalada.jpg' %} " data-lightgallery="item "><img src="{% static 'ProyectoMasterSaludApp/images/ensalada.jpg' %} " alt=" " width="370
+                " height="303 " /></a>
+                                <h4 class="thumbnail-mary-title "><a href="# ">Ensaladas</a></h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Footer-->
+    <footer class="section footer-variant-2 footer-modern context-dark section-top-image section-top-image-dark ">
+        <div class="footer-variant-2-content ">
+            <div class="container ">
+                <div class="row row-40 justify-content-between ">
+                    <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                        <div class="oh-desktop ">
+                            <div class="wow slideInRight " data-wow-delay="0s ">
+
+                                <ul class="rd-navbar-modern-contacts ">
+                                    <li>
+                                        <div class="unit unit-spacing-xs ">
+                                            <div class="unit-left "><span class="icon fa fa-phone "></span></div>
+                                            <div class="unit-body "><a class="link-phone " href="tel:# " style="color: white;">(+593) 74135250 ext 1278</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit unit-spacing-xs ">
+                                            <div class="unit-left "><span class="icon fa fa-clock-o "></span></div>
+                                            <div class="unit-body ">
+                                                <p style="color: white;">Mon-Sat: 07:00AM - 05:00PM</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit unit-spacing-xs ">
+                                            <div class="unit-left "><span class="icon fa fa-location-arrow "></span></div>
+                                            <div class="unit-body "><a class="link-location " href="# " style="color: white;">Cuenca - Ecuador
+                                                    Calle Vieja 12-30 y Elia Liut
+                                                    Edificio Cornelio Merchán, segundo piso</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-4 ">
+                        <div class="oh-desktop ">
+                            <div class="inset-top-18 wow slideInDown " data-wow-delay="0s ">
+                                <h5>Contáctese con nosotros</h5>
+                                <p>"Sus sugerencias y aportes son muy valiosos para nosotros, póngase en contacto con nosotros. "<br>
+                                    <ul class="rd-navbar-modern-contacts">
+                                        <li>
+                                            <div class=" unit unit-spacing-sm">
+                                                <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                                                <div class="unit-body"><a class="link-email" href="mailto:#" style="color: white;">catedraunescoinclusion@ups.edu.ec </a></div>
+                                            </div>
+
+                                            <div class="unit unit-spacing-sm">
+                                                <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+
+
+                                                <div class="unit-body"><a class="link-email" href="mailto:#" style="color: white;">catedraunescoinclusion.org</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </p>
+                                <form class="rd-form rd-mailform " data-form-output="form-output-global " data-form-type="subscribe " method="post " action="bat/rd-mailform.php ">
+                                    <div class="form-wrap ">
+                                        <input class="form-input " id="subscribe-form-5-email " type="email " name="email " data-constraints="@Email @Required ">
+                                        <label class="form-label " for="subscribe-form-5-email ">
+                                            Introduce tu correo electrónico</label>
+                                    </div>
+                                    <button class="button button-block button-white " type="submit ">Subscribe</button>
+                                </form>
+                                <div class="group-lg group-middle ">
+                                    <p class="text-white ">Síguenos</p>
+                                    <div>
+                                        <ul class="list-inline list-inline-sm footer-social-list-2 ">
+                                            <li>
+                                                <a class="icon fa fa-facebook " href="# "></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-twitter " href="# "></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-google-plus " href="# "></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-instagram " href="# "></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-variant-2-bottom-panel ">
+            <div class="container ">
+                <!-- Rights-->
+                <div class="group-sm group-sm-justify ">
+                    <p style="color: orange; " class="rights "><span>&copy;&nbsp;</span><span class="copyright-year "></span> <span> All rights reserved by UPS</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars " id="form-output-global "></div>
+    <!-- Javascript-->
+    <script src="{% static 'ProyectoMasterSaludApp/js/core.min.js' %} "></script>
+    <script src="{% static 'ProyectoMasterSaludApp/js/script.js' %} "></script>
+    <!-- coded by Ragnar-->
+</body>
+
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Typography</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8"> {% load static %}
+    <link rel="icon" href="{% static 'ProyectoMasterSaludApp/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/tabla.css' %}">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container"><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )"><img src="images/banner/foreground-04-1600x60.png" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>
+        <!-- Page Header-->
+        <header class="section page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap rd-navbar-modern-wrap">
+                <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="70px" data-lg-stick-up="true"
+                    data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand">
+                                    <a class="brand" href="{% url 'Inicio'%}"><img src="{% static 'ProyectoMasterSaludApp/images/logo.jpg' %}" alt="" width="196" height="47" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+
+                                    <!-- RD Navbar Search-->
+                                    <div class="rd-navbar-search">
+                                        <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                        <form class="rd-search" action="#">
+                                            <div class="form-wrap">
+                                                <label class="form-label" for="rd-navbar-search-form-input">Buscar...</label>
+                                                <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="search">
+                                                <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'Inicio'%}">INICIO</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about'%}">Alimentación Saludable</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'saludable'%}">Alimentación Saludable Para Adultos, Lactantes y niños</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'encuesta'%}">Encuesta</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contactos'%}">Contactos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                                    <div class="project-hamburger-2"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
+                                    </div>
+                                    <div class="project-close"><span></span><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Breadcrumbs -->
+
+        <section class="section swiper-container swiper-slider swiper-slider-modern" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="true" data-slide-effect="fade">
+            <div class="swiper-wrapper text-left">
+                <div class="swiper-slide " data-slide-bg="{% static 'ProyectoMasterSaludApp/images/encuesta.jpg' %}">
+                    <div class="swiper-slide-caption">
+                        <div class="container">
+                            <div class="row justify-content-center justify-content-xxl-start">
+                                <div class="col-md-10 col-xxl-6">
+                                    <div class="slider-modern-box">
+                                        <h1 class="slider-modern-title"><span data-caption-animate="slideInDown" data-caption-delay="0">ENCUESTA </span></h1>
+
+
+                                        <h3 style="text-align: center; border: 2px dotted ; padding: 8px; width: 60%; border: 2px ; padding: 8px; margin: auto;" class="page-header">Percepción sobre la guía para nutrición de adultos durante la pandemia por COVID19 en Ecuador.</h3>
+
+                                        <div class="oh button-wrap"><a class="button button-primary button-ujarak" href="{% url 'encuesta'%}" data-caption-animate="slideInLeft" data-caption-delay="400">LEER MÁS</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Swiper Navigation-->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Swiper Pagination-->
+            <div class="swiper-pagination swiper-pagination-style-2"></div>
+        </section>
+
+        <section class="breadcrumbs-custom-inset">
+            <div class="breadcrumbs-custom context-dark bg-overlay-33">
+                <div class="container">
+
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a href="#">INICIO</a></li>
+                        <li class="active">ENCUESTA</li>
+                        <br>
+                        <br><br>
+
+                    </ul>
+                    <table>
+                        <tr>
+
+                            <a style="text-align: justify; border: 2px dotted ; padding: 8px; width: 50%; border: 2px ; padding: 8px; margin: auto;" class="page-header">"Esta encuesta tiene por objetivo determinar la percepción de adultos entre 30 a 70 años respecto a la guía sobre nutrición durante la pandemia por COVID19 en el Ecuador. La guía sobre nutrición frente a la pandemia por COVID19
+                                permitirá a los adultos entre 30 a 70 años poder mantener una dieta equilibrada y saludable, para combatir los efectos consecuentes al confinamiento."</a>
+
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Base typography-->
+        <section class="section section-sm bg-default text-left">
+            <div class="container">
+
+                <form action="/contacto/" method="POST">{% csrf_token %}
+                    <fieldset style="color: black;">
+
+                        <h3 style="color:green">Información personal</h3>
+
+                        <p style="color: black;"><label> Apellidos y Nombres:  <input type="text" name="nombres"></label></p>
+
+                        <p style="color: black;"><label>Indique su género:<br>
+                            <input type="radio" name="genero" value="femenino">Femenino<br>
+                            <input type="radio" name="genero" value="masculino">Masculino
+                        </label></p>
+
+                        <p style="color: black;"><label>Edad: <input type="number" name="edad"></label></p>
+
+                        <p style="color: black;"><label>Indique a qué etnia pertenece:<br>
+                            <input type="radio" name="etnia" value="indigena">Indigena<br>
+                            <input type="radio" name="etnia" value="mestiza">Mestiza<br>
+                            <input type="radio" name="etnia" value="afroecuatoriana">Afroecuatoriana<br>
+                            <input type="radio" name="etnia" value="otra">Otra (especifique)
+                        </label></p>
+
+                        <p style="color: black;"><label>Indique su nivel de instrucción:<br>
+                            <input type="radio" name="nivel" value="primaria">Primaria<br>
+                            <input type="radio" name="nivel" value="secundaria">Secundaria<br>
+                            <input type="radio" name="nivel" value="superior">Superior<br>
+                            <input type="radio" name="nivel" value="maestria">Maestría<br>
+                            <input type="radio" name="nivel" value="doctorado">Doctorado<br>
+                            <input type="radio" name="nivel" value="ninguno">Ninguno
+                        </label></p>
+
+                        <p style="color: black;"><label>Indique a qué se dedica: <input type="text" name="dedica"></label></p>
+
+                        <p style="color: black;"><label>Indique en qué sector vive:<br>
+                            <input type="radio" name="sector" value="urbano">Sector urbano<br>
+                            <input type="radio" name="sector" value="rural">Sector rural
+                        </label></p>
+
+                        <p style="color: black;"><label>Indique qué tipo de discapacidad tiene: <input type="text"
+                                name="genero"></label></p>
+                    </fieldset>
+                    <br><br>
+                    <hr style="color: green; ">
+                    <hr style="color: green; ">
+
+
+                    <fieldset style="color: black;">
+                        <h2 style="color: green;">Test</h2>
+
+                        <h3 style="color:green"> Marque con un “✓” la respuesta de las siguientes preguntas, ESCOJA UNA SOLA RESPUESTA:
+                        </h3>
+
+                        <p style="color: black;"><label>1. ¿Qué opina acerca de los contenidos educativos que constan en la guía sobre
+                            nutrición para enfrentar la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="1" value="">Totalmente útiles<br>
+                            <input type="checkbox" name="1" value="">Bastante útiles<br>
+                            <input type="checkbox" name="1" value="">Me da igual<br>
+                            <input type="checkbox" name="1" value="">Poco útiles<br>
+                            <input type="checkbox" name="1" value="">No son nada útiles
+                        </label></p>
+
+                        <p style="color: black;"><label>2. ¿Qué le han parecido los contenidos educativos de la guía sobre nutrición
+                            para
+                            enfrentar la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="2" value="">Demasiada información<br>
+                            <input type="checkbox" name="2" value="">Suficiente información<br>
+                            <input type="checkbox" name="2" value="">Me da igual<br>
+                            <input type="checkbox" name="2" value="">Poca información<br>
+                            <input type="checkbox" name="2" value="">Insuficiente información
+                        </label></p>
+
+                        <p style="color: black;"><label>3. ¿Cómo le resultó comprender los contenidos educativos de la guía sobre
+                            nutrición
+                            para
+                            enfrentar la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="3" value="">Totalmente fácil<br>
+                            <input type="checkbox" name="3" value="">Fácil<br>
+                            <input type="checkbox" name="3" value="">Ni fácil ni difícil<br>
+                            <input type="checkbox" name="3" value="">Un poco difícil<br>
+                            <input type="checkbox" name="3" value="">Demasiado difícil
+                        </label></p>
+
+                        <p style="color: black;"><label>4. ¿Le gustaría usar la guía sobre nutrición para enfrentar la cuarentena por
+                            COVID19?:<br>
+                            <input type="checkbox" name="4" value="">Totalmente de acuerdo<br>
+                            <input type="checkbox" name="4" value="">De acuerdo <br>
+                            <input type="checkbox" name="4" value="">Ni de acuerdo ni en desacuerdo<br>
+                            <input type="checkbox" name="4" value="">Un poco en desacuerdo<br>
+                            <input type="checkbox" name="4" value="">No estoy de acuerdo
+                        </label></p>
+
+                        <p style="color: black;"><label>5. ¿Qué opina sobre la guía de nutrición para enfrentar la cuarentena por
+                            COVID19?:<br>
+                            <input type="checkbox" name="5" value="">Muy interesante<br>
+                            <input type="checkbox" name="5" value="">Interesante<br>
+                            <input type="checkbox" name="5" value="">Me da igual<br>
+                            <input type="checkbox" name="5" value="">Poco interesante<br>
+                            <input type="checkbox" name="5" value="">No es interesante
+                        </label></p>
+
+                        <p style="color: black;"><label>6. ¿En general qué le pareció la guía sobre nutrición para enfrentar la
+                            cuarentena por
+                            COVID19?: <br>
+                            <input type="checkbox" name="6" value="">Novedoso<br>
+                            <input type="checkbox" name="6" value="">Fácil<br>
+                            <input type="checkbox" name="6" value="">Interesante<br>
+                            <input type="checkbox" name="6" value="">Divertido<br>
+                            <input type="checkbox" name="6" value="">Bonito<br>
+                            <input type="checkbox" name="6" value="">Educativo<br>
+                            <input type="checkbox" name="6" value="">Aburrido<br>
+                            <input type="checkbox" name="6" value="">No es interesante<br>
+                            <input type="checkbox" name="6" value="">No es agradable<br>
+                            <input type="checkbox" name="6" value="">Difícil
+                        </label></p>
+
+                        <p style="color: black;"><label>7. ¿Qué sección de guía sobre nutrición para enfrentar la cuarentena por
+                            COVID19?:<br>
+                            <input type="checkbox" name="7" value="">Consuma alimentos variados, incluidas frutas y verduras.<br>
+                            <input type="checkbox" name="7" value="">Reduzca el consumo de sal.<br>
+                            <input type="checkbox" name="7" value="">Consuma cantidades moderadas de grasas y aceites.<br>
+                            <input type="checkbox" name="7" value="">Limite el consumo de azúcar. <br>
+                            <input type="checkbox" name="7" value="">Mantenga una buena hidratación bebiendo suficiente agua. <br>
+                            <input type="checkbox" name="7" value="">Evite un consumo peligroso y nocivo de alcohol. <br>
+                            <input type="checkbox" name="7" value="">Consuma frutas y verduras frescas de larga duración. <br>
+                        </label></p>
+
+                        <p style="color: black;"><label>8. ¿Recomendaría el uso de esta guía sobre nutrición para enfrentar la
+                            cuarentena por
+                            COVID19?:<br>
+                            <input type="checkbox" name="8" value="">Totalmente de acuerdo<br>
+                            <input type="checkbox" name="8" value="">De acuerdo <br>
+                            <input type="checkbox" name="8" value="">Ni de acuerdo ni en desacuerdo<br>
+                            <input type="checkbox" name="8" value="">Un poco en desacuerdo<br>
+                            <input type="checkbox" name="8" value="">No estoy de acuerdo
+            
+                        </label></p>
+
+                        <p style="color: black;"><label>9. ¿Le gustaría utilizar esta guía sobre nutrición como un sistema de apoyo y
+                            soporte
+                            para afrontar la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="9" value="">Totalmente de acuerdo<br>
+                            <input type="checkbox" name="9" value="">De acuerdo <br>
+                            <input type="checkbox" name="9" value="">Ni de acuerdo ni en desacuerdo<br>
+                            <input type="checkbox" name="9" value="">Un poco en desacuerdo<br>
+                            <input type="checkbox" name="9" value="">No estoy de acuerdo
+                        </label></p>
+
+                        <p style="color: black;"><label>10. ¿Con qué frecuencia quisiera utilizar la guía sobre nutrición para enfrentar
+                            la
+                            cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="10" value="">Siempre<br>
+                            <input type="checkbox" name="10" value="">Casi siempre<br>
+                            <input type="checkbox" name="10" value="">A veces<br>
+                            <input type="checkbox" name="10" value="">Casi nunca<br>
+                            <input type="checkbox" name="10" value="">Nunca
+                        </label></p>
+
+                        <p style="color: black;"><label>11. ¿Cree usted que la información sobre nutrición para enfrentar la cuarentena
+                            por
+                            COVID19 son suficientes?:<br>
+                            <input type="checkbox" name="11" value="">Totalmente de acuerdo<br>
+                            <input type="checkbox" name="11" value="">De acuerdo <br>
+                            <input type="checkbox" name="11" value="">Ni de acuerdo ni en desacuerdo<br>
+                            <input type="checkbox" name="11" value="">Un poco en desacuerdo<br>
+                            <input type="checkbox" name="11" value="">No estoy de acuerdo
+            
+                        </label></p>
+
+                        <p style="color: black;"><label>12. ¿Qué tipo de suplemento vitamínicos ha utilizado o usa actualmente para
+                            mejorar su
+                            nutrición durante la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="12" value="">Vitamina C<br>
+                            <input type="checkbox" name="12" value="">Jengibre <br>
+                            <input type="checkbox" name="12" value="">Vitamina D<br>
+                            <input type="checkbox" name="12" value="">Vitamina o complejo B<br>
+                            <input type="checkbox" name="12" value="">Ninguno<br>
+                            <input type="checkbox" name="12" value="">Todos<br>
+                            <input type="checkbox" name="12" value="">Naranja<br>
+                            <input type="checkbox" name="12" value="">Limones<br>
+                            <input type="checkbox" name="12" value="">Otros (indique): <input type="text"
+                            name="genero">
+                        </label></p>
+
+                        <p style="color: black;"><label>13. ¿Cuál de los siguientes alimentos ha consumido o consume con mayor
+                            frecuencia
+                            durante la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="13" value="">Trigo <br>
+                            <input type="checkbox" name="13" value="">Maíz <br>
+                            <input type="checkbox" name="13" value="">Arroz<br>
+                            <input type="checkbox" name="13" value="">Avena<br>
+                            <input type="checkbox" name="13" value="">Otro (especifique): <input type="text"
+                            name="genero">
+                        </label></p>
+                        <p style="color: black;"><label>14. ¿Con respecto a la pregunta No 13, con qué frecuencia diaria consume el
+                            alimento
+                            que indicó?:<br>
+                            <input type="checkbox" name="14" value="">Todos los días<br>
+                            <input type="checkbox" name="14" value="">Más de 3 días a la semana <br>
+                            <input type="checkbox" name="14" value="">Menos de 3 días a la semana<br>
+                            <input type="checkbox" name="14" value="">Un día a la semana<br>
+                            <input type="checkbox" name="14" value="">Otra (indique): <input type="text"
+                            name="genero">
+                        </label></p>
+                        <p style="color: black;"><label>15. ¿Qué alimento a manera de refrigerio consume entre comidas?:<br>
+                            <input type="checkbox" name="15" value="">Pan<br>
+                            <input type="checkbox" name="15" value="">Galletas<br>
+                            <input type="checkbox" name="15" value="">Frituras<br>
+                            <input type="checkbox" name="15" value="">Golosinas de dulce<br>
+                            <input type="checkbox" name="15" value="">Frutas<br>
+                            <input type="checkbox" name="15" value="">Hortalizas<br>
+                            <input type="checkbox" name="15" value="">Frutos secos sin sal<br>
+                            <input type="checkbox" name="15" value="">Frutos secos con sal<br>
+                            <input type="checkbox" name="15" value="">Otra (indique):<input type="text"
+                            name="genero">
+                        </label></p>
+
+
+                        <p style="color: black;"><label>16. ¿Con respecto a la pregunta No 15, con qué frecuencia diaria consume el
+                            alimento
+                            que indicó?:<br>
+                            <input type="checkbox" name="16" value="">Todos los días<br>
+                            <input type="checkbox" name="16" value="">Más de 3 días a la semana <br>
+                            <input type="checkbox" name="16" value="">Menos de 3 días a la semana<br>
+                            <input type="checkbox" name="16" value="">Un día a la semana<br>
+                            <input type="checkbox" name="16" value="">Otra (indique): <input type="text"
+                            name="genero">
+                        </label></p>
+                        <p style="color: black;"><label>17. ¿Cuál de los siguientes alimentos ha consumido o consume con mayor
+                            frecuencia
+                            durante la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="17" value="">Lentejas<br>
+                            <input type="checkbox" name="17" value="">Porotos<br>
+                            <input type="checkbox" name="17" value="">Garbanzos<br>
+                            <input type="checkbox" name="17" value="">Alverjas<br>
+                            <input type="checkbox" name="17" value="">Otra (indique): <input type="text"
+                            name="genero">
+            
+                        </label></p>
+                        <p style="color: black;"><label>18. ¿Con respecto a la pregunta No 17, con qué frecuencia diaria consume el
+                            alimento
+                            que indicó?:<br>
+                            <input type="checkbox" name="18" value="">Todos los días<br>
+                            <input type="checkbox" name="18" value="">Más de 3 días a la semana <br>
+                            <input type="checkbox" name="18" value="">Menos de 3 días a la semana<br>
+                            <input type="checkbox" name="18" value="">Un día a la semana<br>
+                            <input type="checkbox" name="18" value="">Otra (indique):<input type="text"
+                            name="genero">
+                        </label></p>
+                        <p style="color: black;"><label>19. ¿Cuál de los siguientes alimentos ha consumido o consume con mayor
+                            frecuencia
+                            durante la cuarentena por COVID19?:<br>
+                            <input type="checkbox" name="19" value="">Carne de res<br>
+                            <input type="checkbox" name="19" value="">Carne de pollo<br>
+                            <input type="checkbox" name="19" value="">Carne de cerdo<br>
+                            <input type="checkbox" name="19" value="">Pescado<br>
+                            <input type="checkbox" name="19" value="">Otro tipo de carne (indique): <input type="text"
+                            name="genero">
+                        </label></p>
+                    </fieldset>
+
+                    <button type="button" onclick="javascript:window.print()">Imprimir</button>
+
+                </form>
+            </div>
+        </section>
+
+        <hr style="color: green; ">
+        <hr style="color: green; ">
+
+        <!-- Page Footer-->
+        <footer class="section footer-variant-2 footer-modern context-dark section-top-image section-top-image-dark ">
+            <div class="footer-variant-2-content ">
+                <div class="container ">
+                    <div class="row row-40 justify-content-between ">
+                        <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                            <div class="oh-desktop ">
+                                <div class="wow slideInRight " data-wow-delay="0s ">
+
+                                    <ul class="rd-navbar-modern-contacts ">
+                                        <li>
+                                            <div class="unit unit-spacing-xs ">
+                                                <div class="unit-left "><span class="icon fa fa-phone "></span></div>
+                                                <div class="unit-body "><a class="link-phone " href="tel:# " style="color: white;">(+593) 74135250 ext 1278</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit unit-spacing-xs ">
+                                                <div class="unit-left "><span class="icon fa fa-clock-o "></span></div>
+                                                <div class="unit-body ">
+                                                    <p style="color: white;">Mon-Sat: 07:00AM - 05:00PM</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit unit-spacing-xs ">
+                                                <div class="unit-left "><span class="icon fa fa-location-arrow "></span></div>
+                                                <div class="unit-body "><a class="link-location " href="# " style="color: white;">Cuenca - Ecuador
+                                                    Calle Vieja 12-30 y Elia Liut
+                                                    Edificio Cornelio Merchán, segundo piso</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 col-xl-4 ">
+                            <div class="oh-desktop ">
+                                <div class="inset-top-18 wow slideInDown " data-wow-delay="0s ">
+                                    <h5>Contáctese con nosotros</h5>
+                                    <p>"Sus sugerencias y aportes son muy valiosos para nosotros, póngase en contacto con nosotros. "<br>
+                                        <ul class="rd-navbar-modern-contacts">
+                                            <li>
+                                                <div class=" unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#" style="color: white;">catedraunescoinclusion@ups.edu.ec </a></div>
+                                                </div>
+
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+
+
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#" style="color: white;">catedraunescoinclusion.org</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </p>
+                                    <form class="rd-form rd-mailform " data-form-output="form-output-global " data-form-type="subscribe " method="post " action="{% static 'ProyectoMasterSaludApp/bat/rd-mailform.php' %} ">
+                                        <div class="form-wrap ">
+                                            <input class="form-input " id="subscribe-form-5-email " type="email " name="email " data-constraints="@Email @Required ">
+                                            <label class="form-label " for="subscribe-form-5-email ">
+                                            Introduce tu correo electrónico</label>
+                                        </div>
+                                        <button class="button button-block button-white " type="submit ">Subscribe</button>
+                                    </form>
+                                    <div class="group-lg group-middle ">
+                                        <p class="text-white ">Síguenos</p>
+                                        <div>
+                                            <ul class="list-inline list-inline-sm footer-social-list-2 ">
+                                                <li>
+                                                    <a class="icon fa fa-facebook " href="# "></a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon fa fa-twitter " href="# "></a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon fa fa-google-plus " href="# "></a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon fa fa-instagram " href="# "></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-variant-2-bottom-panel ">
+                <div class="container ">
+                    <!-- Rights-->
+                    <div class="group-sm group-sm-justify ">
+                        <p style="color: orange; " class="rights "><span>&copy;&nbsp;</span><span class="copyright-year "></span> <span> All rights reserved by UPS</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars " id="form-output-global "></div>
+    <!-- Javascript-->
+    <script src="{% static 'ProyectoMasterSaludApp/js/core.min.js' %} "></script>
+    <script src="{% static 'ProyectoMasterSaludApp/js/script.js' %} "></script>
+    <!-- coded by Ragnar-->
+</body>
+
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>About Us</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <!-- Stylesheets-->
+    {% load static %}
+
+    <link rel="icon" href="{% static 'ProyectoMasterSaludApp/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'ProyectoMasterSaludApp/css/tabla.css' %}">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container"><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <a class="section section-banner d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )"><img src="images/banner/foreground-04-1600x60.png" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>
+        <!-- Page Header-->
+        <header class="section page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap rd-navbar-modern-wrap">
+                <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="70px" data-lg-stick-up="true"
+                    data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand">
+                                    <a class="brand" href="{% url 'Inicio'%}"><img src="{% static 'ProyectoMasterSaludApp/images/logo.jpg' %}" alt="" width="196" height="47" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+
+                                    <!-- RD Navbar Search-->
+                                    <div class="rd-navbar-search">
+                                        <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                        <form class="rd-search" action="#">
+                                            <div class="form-wrap">
+                                                <label class="form-label" for="rd-navbar-search-form-input">Buscar...</label>
+                                                <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="search">
+                                                <button class="rd-search-form-submit fl-bigmug-line-search74" type="submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'Inicio'%}">INICIO</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about'%}">Alimentación Saludable</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'saludable'%}">Alimentación Saludable Para Adultos, Lactantes y niños</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'encuesta'%}">Encuesta</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contactos'%}">Contactos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                                    <div class="project-hamburger"><span class="project-hamburger-arrow-top"></span><span class="project-hamburger-arrow-center"></span><span class="project-hamburger-arrow-bottom"></span></div>
+                                    <div class="project-hamburger-2"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
+                                    </div>
+                                    <div class="project-close"><span></span><span></span></div>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-project rd-navbar-modern-project">
+                                <div class="rd-navbar-project-modern-header">
+                                    <h4 class="rd-navbar-project-modern-title">Ponerse en contacto</h4>
+                                    <div class="rd-navbar-project-hamburger" data-multitoggle=".rd-navbar-main" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate>
+                                        <div class="project-close"><span></span><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="rd-navbar-project-content rd-navbar-modern-project-content">
+                                    <div>
+                                        <p>"Sus sugerencias y aportes son muy valiosos para nosotros, póngase en contacto con nosotros."</p>
+
+                                        <ul class="rd-navbar-modern-contacts">
+                                            <li>
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                                                    <div class="unit-body"><a class="link-phone" href="tel:#">(+593) 74135250 ext 1278</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                                                    <div class="unit-body"><a class="link-location" href="#">Cuenca - Ecuador Calle Vieja 12-30 y Elia Liut
+                                                      Edificio Cornelio Merchán, segundo piso.</a></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#">catedraunescoinclusion@ups.edu.ec </a></div>
+                                                </div>
+
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+
+
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#">catedraunescoinclusion.org</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-inline rd-navbar-modern-list-social">
+                                            <li>
+                                                <a class="icon fa fa-facebook" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-twitter" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-google-plus" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-instagram" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon fa fa-pinterest" href="#"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs-custom-inset">
+            <div class="breadcrumbs-custom context-dark bg-overlay-46">
+                <div class="container">
+                    <h2 class="breadcrumbs-custom-title">DIETA SALUDABLE DURANTE LA CUARENTENA POR COVID19</h2>
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a href="{% url 'Inicio'%}">INICIO</a></li>
+                        <li class="active">ALIMENTACIÓN SALUDABLE</li>
+                    </ul>
+                </div>
+                <div class="box-position" style="background-image: url(images/bg-breadcrumbs.jpg);"></div>
+            </div>
+        </section>
+        <!-- Why choose us-->
+        <section class="section section-md section-first bg-default text-md-left">
+            <div class="container">
+                <div class="row row-50 justify-content-center">
+                    <div class="col-md-10 col-lg-5 col-xl-6"><img src=" {% static 'ProyectoMasterSaludApp/images/saludable.jpg' %}" alt="" width="519" height="446" />
+                    </div>
+                    <div class="col-md-10 col-lg-7 col-xl-6">
+                        <h2>ALIMENTACIÓN SALUDABLE</h2>
+                        <!-- Bootstrap tabs-->
+                        <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
+                            <!-- Nav tabs-->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-4-1" data-toggle="tab">Importancia</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-2" data-toggle="tab">Enfermedades</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-3" data-toggle="tab"> Nuestra Misión .</a></li>
+
+                            </ul>
+                            <!-- Tab panes-->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="tabs-4-1">
+                                    <p>Una alimentación saludable ayuda a proteger la salud y a prevenir enfermedades. Muchos estudios relacionan la falta de una alimentación saludable con enfermedades crónicas (cardiovasculares, obesidad, diabetes, cáncer,
+                                        etc), demostrándose así que una alimentación inapropiada es uno de los principales factores determinantes del desarrollo de estas enfermedades. ​ Una alimentación sana permite por un lado que nuestro organismo funcione
+                                        con normalidad, que cubra nuestras necesidades fisiológicas básicas, y por otro, reduce el riesgo de padecer enfermedades a corto y largo plazo. No se trata de una relación directa de causa-efecto, pero sí contribuye
+                                        a aumentar el riesgo de aparición y desarrollo de dichas enfermedades.
+
+                                    </p>
+                                    <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk" href="#">LEER MÁS</a><a class="button button-width-xl-310 button-default-outline button-wapasha" href="{% url 'contactos'%}">Contacta con nosotros</a></div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-4-2">
+                                    <p>Por el contrario, una mala alimentación, con exceso de grasas saturadas, sal, azúcar y la forma de cocinar ciertos alimentos (frituras y rebozados) se asocian a algunas enfermedades. Según la OMS, cerca de 2,7 millones
+                                        de personas fallecen al año por una mala alimentación, por un bajo consumo de frutas y verduras. Algunas de las enfermedades que se relacionan con una mala alimentación son las siguientes:
+                                    </p>
+                                    <div class="text-center text-sm-left offset-top-30">
+                                        <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
+                                            <li>Diabetes</li>
+                                            <li>Cáncer</li>
+                                            <li>Sobrepeso y obesidad</li>
+                                            <li>Problemas bucodentales.</li>
+                                            <li>Hipertensión arterial</li>
+                                            <li>Colesterol elevado o hipercolesterolemia</li>
+                                            <li>La comida rápida, rica en grasas y azúcares o los alimentos precocinados son alimentos que favorecen la proliferación de bacterias cariógenas.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk" href="#">LEER MÁS</a><a class="button button-width-xl-310 button-default-outline button-wapasha" href="{% url 'contactos'%}">Contacta con nosotros</a></div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-4-3">
+                                    <p>
+                                        Nuestra misión es ayudar con información sobre una buena alimentación, nutrición y brindar consejos saludables, de manera oportuna, responsable y segura, velando por la salud y satisfacción de los todos los usuarios por la pantenia del COVID-19, para
+                                        ello contamos con:
+                                    </p>
+                                    <div class="text-center text-sm-left offset-top-30">
+                                        <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
+                                            <li>Alimentación adecuada.</li>
+                                            <li>Dieta saludable para adultos entre (30 a 70) años.</li>
+                                            <li>Nutrición adecuda para lactantes y niños.</li>
+                                            <li>Servicio de encuesta sobre la utilidad de la página.</li>
+                                            <li>Contactos.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk" href="#">LEER MÁS</a><a class="button button-width-xl-310 button-default-outline button-wapasha" href="{% url 'contactos'%}">Contacta con nosotros</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr style="color: green;">
+        <hr style="color: green;">
+
+        <!-- Latest Projects-->
+        <section class="section section-md section-fluid bg-default">
+            <div class="container">
+                <h3 style="text-align: center; border: 1px dotted #000; padding: 10px; width: 60%; border: 1px dotted #f00; padding: 10px; margin: auto;" class="page-header">CONSEJOS SALUDABLES</h3>
+
+            </div>
+
+            <div class="container">
+                <table>
+                    <tr>
+
+                        <h2 style="color:green;text-align: center;">"Qué rico es comer bien y sano"</h2>
+                    </tr>
+                </table>
+                <br></br>
+
+                <table>
+                    <tr>
+                        <td class="first ">
+                            <img class=" " src="{% static 'ProyectoMasterSaludApp/images/primero.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 440px; ">
+
+
+                        </td>
+                        <td class="second ">
+                            <h3><u>Consuma alimentos variados, incluidas frutas y verduras.</u></h3>
+
+                            <h5 style="text-align: justify; "> • Coma todos los días una combinación de cereales integrales como trigo, maíz o arroz, legumbres como lentejas o frijoles (judías), verduras y frutas frescas en abundancia, y algún alimento de origen animal, por ejemplo carne,
+                                pescado, huevos o leche. ​ <br><br> • Siempre que pueda, elija cereales —como maíz, mijo, avena, trigo o arroz— integrales, no procesados: son ricos en fibra beneficiosa y proporcionan una sensación de saciedad más duradera.
+                                <br><br> • Como refrigerio entre horas, tome hortalizas crudas, fruta fresca o frutos secos sin sal.
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr style="color: green;">
+                <hr style="color: green;">
+                <br><br>
+                <table>
+                    <tr>
+                        <td class="first ">
+                            <img class=" " src="{% static 'ProyectoMasterSaludApp/images/2.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 440px; ">
+
+
+                        </td>
+                        <td class="second ">
+                            <h3><u>Reduzca el consumo de sal.</u></h3>
+
+                            <h5 style="text-align: justify; "> • Limite el consumo de sal a 5 gramos diarios (equivalentes a una cucharadita). ​<br><br> • Al cocinar y preparar la comida, emplee poca sal y reduzca el uso de salsas y condimentos salados (como la salsa de soja, el caldo
+                                de carne o la salsa de pescado). ​ <br><br> • Si consume alimentos enlatados o desecados, elija hortalizas, frutos secos y frutas sin sal ni azúcar añadidas.<br><br> ​• Retire el salero de la mesa y pruebe en cambio a dar
+                                más sabor a los platos con hierbas y especias frescas o secas. <br><br>​ • Consulte las etiquetas de los alimentos envasados y elija los productos con menor contenido de sodio.
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr style="color: green;">
+                <hr style="color: green;">
+                <br><br>
+                <table>
+                    <tr>
+                        <td class="first ">
+                            <img class=" " src="{% static 'ProyectoMasterSaludApp/images/3.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 440px; ">
+
+
+                        </td>
+                        <td class="second ">
+                            <h3><u>Consuma cantidades moderadas de grasas y aceites.</u></h3>
+
+                            <h5 style="text-align: justify; "> • Al cocinar, sustituya la mantequilla, el ghee o la manteca de cerdo por grasas más saludables como el aceite de oliva, de soja, de girasol o de maíz. ​ <br><br> • Consuma preferentemente aves y pescado, que por lo general
+                                contienen menos grasa que la carne de ternera, cordero o cerdo; aparte la grasa visible y limite el consumo de carnes procesadas. <br><br>​ • Tome leche y productos lácteos desnatados o semidesnatados. ​ <br><br> • Evite
+                                los alimentos procesados, horneados y fritos que contengan grasas trans de producción industrial. <br><br>​ • Pruebe a hervir los alimentos o cocinarlos al vapor en lugar de freírlos.
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr style="color: green;">
+                <hr style="color: green;">
+                <br><br>
+                <table>
+                    <tr>
+                        <td class="first ">
+
+                            <img class=" " src="{% static 'ProyectoMasterSaludApp/images/4.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 440px; ">
+
+                        </td>
+                        <td class="second ">
+                            <h3><u>Limite el consumo de azúcar.</u></h3>
+
+                            <h5 style="text-align: justify; "> • Limite el consumo de golosinas y de bebidas que contengan azúcar como refrescos, jugos de fruta y bebidas a base de jugo, concentrados líquidos y en polvo, aguas aromatizadas, bebidas energéticas y deportivas, té o café listos
+                                para beber y bebidas lácteas aromatizadas. ​<br><br>​ • Coma fruta fresca en lugar de dulces como galletas, pasteles y chocolate. Si toma un postre que no sea fruta, asegúrese de que contenga poco azúcar y sírvase porciones
+                                pequeñas. ​
+                                <br><br>​ •No dé alimentos dulces a los niños. No se debe añadir sal ni azúcar a la alimentación complementaria hasta los 2 años, y a partir de esa edad solo se debe hacer en cantidades limitadas.
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr style="color: green;">
+                <hr style="color: green;">
+                <br><br>
+                <table>
+                    <tr>
+                        <td class="first ">
+
+                            <img class=" " src="{% static 'ProyectoMasterSaludApp/images/5.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 440px; ">
+
+                        </td>
+                        <td class="second ">
+                            <h3><u>Mantenga una buena hidratación bebiendo suficiente agua.</u></h3>
+
+                            <h5 style="text-align: justify; "> • Una buena hidratación es crucial para una salud óptima. Siempre que se disponga de ella y que sea apta para el consumo, el agua del grifo es la bebida más saludable y económica. Tomar agua en lugar de bebidas azucaradas es
+                                una forma sencilla de limitar el consumo de azúcar y evitar un exceso de calorías.
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr style="color: green;">
+                <hr style="color: green;">​
+                <br><br>
+                <table>
+                    <tr>
+                        <td class="first ">
+
+                            <img class=" " src="{% static 'ProyectoMasterSaludApp/images/6.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 440px; ">
+
+                        </td>
+                        <td class="second ">
+                            <h3><u>Evite un consumo peligroso y nocivo de alcohol.</u></h3>
+
+                            <h5 style="text-align: justify; "> • Las bebidas alcohólicas no forman parte de una alimentación saludable. Su consumo no protege contra la COVID-19 y puede ser peligroso. El consumo frecuente o excesivo de alcohol aumenta el riesgo inmediato de lesiones, además
+                                de provocar efectos a más largo plazo como daños en el hígado, cáncer, enfermedades del corazón y trastornos mentales. No existe un nivel seguro de consumo de alcohol.
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <hr style="color: green;">
+                <hr style="color: green;">
+                <br><br>
+                <table>
+                    <tr>
+                        <td class="first ">
+
+                            <img class=" " src="{% static 'ProyectoMasterSaludApp/images/7.jpg' %} " style="padding: 10px; margin: 10px; border: 2px solid black; float: center; width: 440px; ">
+
+                        </td>
+                        <td class="second ">
+                            <h3><u>Consuma frutas y verduras frescas de larga duración.</u></h3>
+
+                            <h5 style="text-align: justify; "> • La OMS recomienda consumir un mínimo de 400 g (es decir, 5 porciones) de frutas y verduras al día. Los cítricos como: las naranjas, las clementinas y el pomelo son buenas opciones, así como los plátanos y las manzanas, que
+                                también se pueden cortar en trozos más pequeños y congelarlos para su posterior consumo o para añadirlos a batidos. Las verduras de raíz como las zanahorias, los nabos y la remolacha, así como las verduras como el repollo,
+                                el brócoli y la coliflor, son relativamente no perecederos. El ajo, el jengibre y las cebollas también son excelentes opciones para tener en casa, ya que pueden usarse para agregar sabor a una variedad de comidas.
+                            </h5>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+            </div>
+
+        </section>
+
+        <hr style="color: green;">
+        <hr style="color: green;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer class="section footer-variant-2 footer-modern context-dark section-top-image section-top-image-dark ">
+            <div class="footer-variant-2-content ">
+                <div class="container ">
+                    <div class="row row-40 justify-content-between ">
+                        <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                            <div class="oh-desktop ">
+                                <div class="wow slideInRight " data-wow-delay="0s ">
+
+                                    <ul class="rd-navbar-modern-contacts ">
+                                        <li>
+                                            <div class="unit unit-spacing-xs ">
+                                                <div class="unit-left "><span class="icon fa fa-phone "></span></div>
+                                                <div class="unit-body "><a class="link-phone " href="tel:# " style="color: white;">(+593) 74135250 ext 1278</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit unit-spacing-xs ">
+                                                <div class="unit-left "><span class="icon fa fa-clock-o "></span></div>
+                                                <div class="unit-body ">
+                                                    <p style="color: white;">Mon-Sat: 07:00AM - 05:00PM</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit unit-spacing-xs ">
+                                                <div class="unit-left "><span class="icon fa fa-location-arrow "></span></div>
+                                                <div class="unit-body "><a class="link-location " href="# " style="color: white;">Cuenca - Ecuador
+                                                      Calle Vieja 12-30 y Elia Liut
+                                                      Edificio Cornelio Merchán, segundo piso</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 col-xl-4 ">
+                            <div class="oh-desktop ">
+                                <div class="inset-top-18 wow slideInDown " data-wow-delay="0s ">
+                                    <h5>Contáctese con nosotros</h5>
+                                    <p>"Sus sugerencias y aportes son muy valiosos para nosotros, póngase en contacto con nosotros. "<br>
+                                        <ul class="rd-navbar-modern-contacts">
+                                            <li>
+                                                <div class=" unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#" style="color: white;">catedraunescoinclusion@ups.edu.ec </a></div>
+                                                </div>
+
+                                                <div class="unit unit-spacing-sm">
+                                                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+
+
+                                                    <div class="unit-body"><a class="link-email" href="mailto:#" style="color: white;">catedraunescoinclusion.org</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </p>
+                                    <form class="rd-form rd-mailform " data-form-output="form-output-global " data-form-type="subscribe " method="post " action="bat/rd-mailform.php ">
+                                        <div class="form-wrap ">
+                                            <input class="form-input " id="subscribe-form-5-email " type="email " name="email " data-constraints="@Email @Required ">
+                                            <label class="form-label " for="subscribe-form-5-email ">
+                                              Introduce tu correo electrónico</label>
+                                        </div>
+                                        <button class="button button-block button-white " type="submit ">Subscribe</button>
+                                    </form>
+                                    <div class="group-lg group-middle ">
+                                        <p class="text-white ">Síguenos</p>
+                                        <div>
+                                            <ul class="list-inline list-inline-sm footer-social-list-2 ">
+                                                <li>
+                                                    <a class="icon fa fa-facebook " href="# "></a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon fa fa-twitter " href="# "></a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon fa fa-google-plus " href="# "></a>
+                                                </li>
+                                                <li>
+                                                    <a class="icon fa fa-instagram " href="# "></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-variant-2-bottom-panel ">
+                <div class="container ">
+                    <!-- Rights-->
+                    <div class="group-sm group-sm-justify ">
+                        <p style="color: orange; " class="rights "><span>&copy;&nbsp;</span><span class="copyright-year "></span> <span> All rights reserved by UPS</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars " id="form-output-global "></div>
+    <!-- Javascript-->
+    <script src="{% static 'ProyectoMasterSaludApp/js/core.min.js' %} "></script>
+    <script src="{% static 'ProyectoMasterSaludApp/js/script.js' %} "></script>
+    <!-- coded by Ragnar-->
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.tabla {
+    border-collapse: collapse;
+}
+
+.cabeceraTabla {
+    text-align: center;
+    background: none repeat scroll 0 0 #E5E5E5;
+    border-bottom: 1px solid #BBBBBB;
+    padding: 8px;
+}
+
+.filaImpar {
+    text-align: center;
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-top: 1px solid #BBBBBB;
+}
+
+td {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 20px;
+    text-align: justify;
+    vertical-align: top;
+    width: 50%;
+}
+
+td.first {
+    border-right: 5px solid #4BB495;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1;
+}
+
+p {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.333333334;
+    margin-bottom: 30px;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.three-columns {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    column-count: 3;
+    column-rule: 5px solid rgb(75, 180, 149);
+    column-rule: 0.5rem solid rgb(75, 180, 149);
+}
